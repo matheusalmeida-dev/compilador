@@ -1,7 +1,7 @@
 import csv
 
 
-linha = 'while ; i < 10i0 do i = i + j;'
+linha = 'while ; x i < 10i0 do i = i + j;'
 
 reservadas = ['while', 'do']
 operadores = ['<', '=', '+']
@@ -50,7 +50,6 @@ def verifica(item):
 
 def traduz(linha):
     itens = formata(linha)
-    print(itens)
     arq = open('tabelas.csv', 'w', newline='', encoding='utf-8')
     w = csv.writer(arq)
     w.writerow(['TOKEN', 'IDENTIFICACAO', 'TAMANHO', 'POSICAO'])
